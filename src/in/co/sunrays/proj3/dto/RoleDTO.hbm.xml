@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 Jun, 2014 2:11:03 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="in.co.sunrays.proj3.dto">
+	<class name="RoleDTO" table="ST_ROLE" dynamic-insert="true"
+		dynamic-update="true">
+		<id name="id" column="ID" length="20">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name" type="java.lang.String" column="NAME"
+			length="50">
+			</property>
+		<property name="description" type="java.lang.String" column="DESCRIPTION"
+			length="50">
+			</property>
+		<property name="createdBy" type="java.lang.String" column="CREATED_BY"
+			length="50">
+			</property>
+		<property name="modifiedBy" type="java.lang.String" column="MODIFIED_BY"
+			length="50">
+			</property>
+		<property name="createdDatetime" type="timestamp" column="CREATED_DATETIME">
+			</property>
+		<property name="modifiedDatetime" type="timestamp" column="MODIFIED_DATETIME">
+			</property>
+	</class>
+</hibernate-mapping>

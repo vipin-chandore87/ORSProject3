@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="in.co.sunrays.proj3.dto">
+	<class name="UserDTO" table="ST_USER" dynamic-insert="true"
+		dynamic-update="true">
+		<id name="id" column="ID" length="20">
+			<generator class="increment"></generator>
+		</id>
+		<property name="firstName" type="java.lang.String" column="FIRST_NAME"
+			length="50">
+			</property>
+		<property name="lastName" type="java.lang.String" column="LAST_NAME"
+			length="50">
+			</property>
+		<property name="login" type="java.lang.String" column="LOGIN"
+			length="50">
+			</property>
+		<property name="password" type="java.lang.String" column="PASSWORD"
+			length="50">
+			</property>
+		<property name="dob" type="java.util.Date" column="DOB">
+			</property>
+		<property name="mobileNo" type="java.lang.String" column="MOBILE_NO"
+			length="15">
+			</property>
+		<property name="roleId" type="java.lang.Long" column="ROLE_ID"
+			length="20">
+			</property>
+		<property name="unSuccessfulLogin" type="int" column="UNSUCCESSFUL_LOGIN"
+			length="11">
+			</property>
+		<property name="gender" type="java.lang.String" column="GENDER"
+			length="10">
+			</property>
+		<property name="lastLogin" type="java.sql.Timestamp" column="LAST_LOGIN">
+			</property>
+		<property name="lock" type="java.lang.String" column="USER_LOCK"
+			length="10">
+			</property>
+		<property name="registeredIP" type="java.lang.String" column="REGISTERED_IP"
+			length="20">
+			</property>
+		<property name="lastLoginIP" type="java.lang.String" column="LAST_LOGIN_IP"
+			length="20">
+			</property>
+		<property name="createdBy" type="java.lang.String" column="CREATED_BY"
+			length="50">
+			</property>
+		<property name="modifiedBy" type="java.lang.String" column="MODIFIED_BY"
+			length="50">
+			</property>
+		<property name="createdDatetime" type="timestamp" column="CREATED_DATETIME">
+			</property>
+		<property name="modifiedDatetime" type="timestamp" column="MODIFIED_DATETIME">
+			</property>
+	</class>
+</hibernate-mapping>

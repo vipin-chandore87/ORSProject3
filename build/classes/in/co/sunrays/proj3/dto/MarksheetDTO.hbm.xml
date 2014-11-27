@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 Jun, 2014 2:11:03 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="in.co.sunrays.proj3.dto">
+	<class name="MarksheetDTO" table="ST_MARKSHEET" dynamic-insert="true"
+		dynamic-update="true">
+		<id name="id" type="java.lang.Long" column="ID" length="20">
+			<generator class="increment" />
+		</id>
+		<property name="rollNo" type="java.lang.String" column="ROLL_NO"
+			length="15">
+			</property>
+		<property name="studentId" type="java.lang.Long" column="STUDENT_ID"
+			length="20">
+		</property>
+		<property name="name" type="java.lang.String" column="NAME"
+			length="50">
+			</property>
+		<property name="physics" type="java.lang.Integer" column="PHYSICS"
+			length="5">
+			</property>
+		<property name="chemistry" type="java.lang.Integer" column="CHEMISTRY"
+			length="5">
+			</property>
+		<property name="maths" type="java.lang.Integer" column="MATHS"
+			length="5">
+			</property>
+		<property name="createdBy" type="java.lang.String" column="CREATED_BY"
+			length="50">
+			</property>
+		<property name="modifiedBy" type="java.lang.String" column="MODIFIED_BY"
+			length="50">
+			</property>
+		<property name="createdDatetime" type="timestamp" column="CREATED_DATETIME">
+			</property>
+		<property name="modifiedDatetime" type="timestamp" column="MODIFIED_DATETIME">
+			</property>
+	</class>
+</hibernate-mapping>
